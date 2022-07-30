@@ -75,7 +75,7 @@ class CardWidget extends StatelessWidget {
               splashColor: Colors.grey[200],
               child: const Center(
                 child: Text(
-                  'Otros',
+                  'Todo',
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
                 ),
               ),
