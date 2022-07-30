@@ -14,19 +14,20 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.transparent,
+        title: Text('CONTROL DE PRECIOS'),
+        // backgroundColor: Colors.transparent,
       ),
       drawer: const DrawerHomeScreen(),
       body: Center(
         child: Column(
           children: const [
             SizedBox(
-              height: 25,
+              height: 10,
             ),
-            Text(
-              'CONTROL DE PRECIOS',
-              style: TextStyle(color: Colors.black, fontSize: 28),
-            ),
+            // Text(
+            //   'CONTROL DE PRECIOS',
+            //   style: TextStyle(color: Colors.black, fontSize: 28),
+            // ),
             CardWidget(),
           ],
         ),

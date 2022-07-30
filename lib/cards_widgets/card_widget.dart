@@ -9,7 +9,7 @@ class CardWidget extends StatelessWidget {
       child: GridView.count(
         padding: const EdgeInsets.all(30),
         mainAxisSpacing: 20,
-        crossAxisCount: 1,
+        crossAxisCount: 2,
         children: [
           Card(
             child: InkWell(
