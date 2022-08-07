@@ -20,7 +20,7 @@ class DrawerHomeScreen extends StatelessWidget {
                 shape: BoxShape.circle),
           ),
           const Text(
-            'Juan Matias',
+            'Usuario',
             style: TextStyle(fontSize: 23, fontWeight: FontWeight.w300),
           ),
           TextButton(
@@ -28,7 +28,7 @@ class DrawerHomeScreen extends StatelessWidget {
             child: Container(
               padding: const EdgeInsets.all(20),
               width: double.infinity,
-              child: const Text('Usuario'),
+              child: const Text('Configuracion'),
             ),
           ),
           TextButton(
@@ -44,7 +44,7 @@ class DrawerHomeScreen extends StatelessWidget {
             child: Container(
               padding: const EdgeInsets.all(20),
               width: double.infinity,
-              child: const Text('Todo'),
+              child: const Text('Cerrar Sesión'),
             ),
           ),
         ],

@@ -12,7 +12,9 @@ class ProductsProvider extends ChangeNotifier {
   }
 
   getOnDisplayProducts() async {
-    var url = Uri.https(_baseUrl, 'tienda/productos_json');
+    // var url = Uri.https(_baseUrl, 'tienda/productos_json');
+    // var url = Uri.https(_baseUrl, 'tienda/productos_exel_alternativo');
+    var url = Uri.https(_baseUrl, 'tienda/productos_exel_final');
 
     final response = await http.get(url);
     final producstResponse = Tienda.fromJson(response.body);

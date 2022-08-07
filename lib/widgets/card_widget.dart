@@ -37,7 +37,7 @@ class CardWidget extends StatelessWidget {
               splashColor: Colors.grey[200],
               child: Center(
                 child: Text(
-                  categories[index].category,
+                  categories[index].category.toUpperCase(),
                   style: const TextStyle(
                       fontSize: 20, fontWeight: FontWeight.w600),
                 ),
