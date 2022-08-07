@@ -3,7 +3,7 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-import 'package:control_precios_tienda2022/models/product.dart';
+import 'package:control_precios_tienda2022/models/models.dart';
 
 class SpecificDulcesScreen extends StatefulWidget {
   const SpecificDulcesScreen({Key? key}) : super(key: key);
@@ -24,7 +24,7 @@ class _SpecificDulcesScreenState extends State<SpecificDulcesScreen> {
       final jsonData = jsonDecode(body);
 
       for (var item in jsonData) {
-        products.add(Product(item["name"], item["value"].toString()));
+        products.add(Products(item["name"], item["value"].toString()));
       }
 
       return products;

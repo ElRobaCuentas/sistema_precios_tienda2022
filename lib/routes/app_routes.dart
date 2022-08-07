@@ -1,15 +1,21 @@
-import 'package:control_precios_tienda2022/mains.dart';
-import 'package:control_precios_tienda2022/screens/products_screen/favoritos.dart';
-import 'package:control_precios_tienda2022/screens/specific_products_screen/specific_chocolates.dart';
-import 'package:control_precios_tienda2022/screens/specific_products_screen/specific_galletas.dart';
+// import 'package:control_precios_tienda2022/main.dart';
+import 'package:control_precios_tienda2022/screens/categories_screen.dart';
+import 'package:control_precios_tienda2022/screens/products_screen.dart';
+import 'package:control_precios_tienda2022/screens/screens.dart';
+import 'package:control_precios_tienda2022/screens/subcategories_screen.dart';
 import 'package:flutter/material.dart';
 
 class AppRoutes {
-  static const initialRoute = 'home';
+  static const initialRoute = '/category';
 
   static Map<String, Widget Function(BuildContext)> routes = {
     // Principal
     'home': (context) => const HomeScreen(),
+
+    // Otros
+    '/category': (context) => const CategoriesScreen(),
+    '/subcategory': (context) => const SubcategoriesScreen(),
+    '/product': (context) => const ProductsScreen(),
 
     // Pantalla de Procutos
     '/dulces': (context) => const DulcesScreen(),

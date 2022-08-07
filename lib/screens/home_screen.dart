@@ -1,36 +1,19 @@
-import 'package:control_precios_tienda2022/cards_widgets/card_widget.dart';
-import 'package:control_precios_tienda2022/screens/drawer_home_screen.dart';
+import 'package:control_precios_tienda2022/screens/menu_screen.dart';
 import 'package:flutter/material.dart';
 
-class HomeScreen extends StatefulWidget {
+class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
-  @override
-  State<HomeScreen> createState() => _HomeScreenState();
-}
-
-class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('CONTROL DE PRECIOS'),
+        title: const Text('HOME SCREEN'),
         // backgroundColor: Colors.transparent,
       ),
       drawer: const DrawerHomeScreen(),
-      body: Center(
-        child: Column(
-          children: const [
-            SizedBox(
-              height: 10,
-            ),
-            // Text(
-            //   'CONTROL DE PRECIOS',
-            //   style: TextStyle(color: Colors.black, fontSize: 28),
-            // ),
-            CardWidget(),
-          ],
-        ),
+      body: const Center(
+        child: Text("home screen"),
       ),
     );
   }
